@@ -32,63 +32,63 @@ header {
   margin-left: 1.8rem;
   cursor: pointer;
   font-size: 1.2rem;
-  color:white;
+  color: white;
 }
 
 .home-banner {
-  display:flex;
+  display: flex;
   flex-direction: row;
   justify-content: center;
-  gap:6rem;
-  background-color:#E6E6E6;
-  padding-top: 0.1rem;;
+  gap: 6rem;
+  background-color: #e6e6e6;
+  padding-top: 0.1rem;
 }
 
 .world-map {
-  color:#363062;
+  color: #363062;
   font-size: 7rem;
   margin-top: 2rem;
 }
 
 .banner-title {
   font-size: 2rem;
-  color:#363062;
+  color: #363062;
   margin-bottom: 0.2rem;
   font-weight: 600;
 }
 
 .case-title {
-  color: #1C0C5B;
-  font-size:1.4rem;
+  color: #1c0c5b;
+  font-size: 1.4rem;
   margin-bottom: 2rem;
 }
 
 .categories-container {
   display: flex;
   flex-direction: row;
-  gap :20rem;
+  gap: 20rem;
   justify-content: center;
   background-color: #363062;
-  color:white;
+  color: white;
   font-size: 1.2rem;
   cursor: pointer;
 }
 
 .main-container {
-  background-color:#E6E6E6;
-  padding:1rem;
+  background-color: #e6e6e6;
+  padding: 1rem;
 }
 
 .search-container {
   margin-left: 1.7rem;
-  font-size:1.5rem;
-  color: #1C0C5B;
+  font-size: 1.5rem;
+  color: #1c0c5b;
 }
 
 input {
   border: none;
   font-size: 1.5rem;
-  color: #1C0C5B;
-  margin:1rem;
-  background-color:#E6E6E6;
+  color: #1c0c5b;
+  margin: 1rem;
+  background-color: #e6e6e6;
 }
