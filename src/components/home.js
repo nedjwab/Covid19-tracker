@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { GiWorld } from 'react-icons/gi';
 import { FiSearch } from 'react-icons/fi';
@@ -12,6 +12,8 @@ function Home() {
   }, []);
 
   const countriesData = useSelector((state) => state.countriesData);
+  const [postCity, setCity] = useState('');
+  const dataSearch = (str) => setCity(str);
   return (
     <section className="body">
       <div className="home-banner">
@@ -37,25 +39,27 @@ function Home() {
         <span className="search-container">
           <FiSearch />
         </span>
-        <input placeholder="eg:Algeria, America" />
+        <input placeholder="eg:Algeria, America" onChange={(e) => dataSearch(e.target.value)} />
       </div>
       <div className="countries-container">
         <ul className="countries-list">
           {
-      countriesData.map((data) => (
-        <Link
-          to={`/details/${data.country}`}
-          key={data.country}
-          state={data.country === null ? '' : { country: data.country }}
-        >
-          <div className="country-info">
-            <p className="country-name">{data.country.toUpperCase()}</p>
-            <img src={data.flag} alt="flag" />
-            <p className="country-capital">{data.iso}</p>
-            <p className="country-capital">{data.cases}</p>
-            <p className="country-capital">{data.deaths}</p>
-          </div>
-        </Link>
+      countriesData.filter((value) => value.country
+        .toLowerCase().includes(postCity
+          .toLocaleLowerCase())).map((data) => (
+            <Link
+              to={`/details/${data.country}`}
+              key={data.country}
+              state={data.country === null ? '' : { country: data.country }}
+            >
+              <div className="country-info">
+                <p className="country-name">{data.country.toUpperCase()}</p>
+                <img src={data.flag} alt="flag" />
+                <p className="country-capital">{data.iso}</p>
+                <p className="country-capital">{data.cases}</p>
+                <p className="country-capital">{data.deaths}</p>
+              </div>
+            </Link>
       ))
      }
         </ul>

@@ -16,6 +16,8 @@ function Details() {
   return (
     <div className="container">
       <h1>{ stat.deaths }</h1>
+      <h1>{ stat.cases }</h1>
+      <img src={stat.countryInfo.flag} alt="flag" />
       <h1>Test</h1>
     </div>
   );
