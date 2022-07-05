@@ -62,3 +62,14 @@ header {
   font-size:1.4rem;
   margin-bottom: 2rem;
 }
+
+.categories-container {
+  display: flex;
+  flex-direction: row;
+  gap :20rem;
+  justify-content: center;
+  background-color: #363062;
+  color:white;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
