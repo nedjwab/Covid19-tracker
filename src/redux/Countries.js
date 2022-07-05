@@ -8,16 +8,16 @@ export const getCountries = (payload) => ({
   payload,
 });
 
-export const fetchCity = () => async (dispatch) => {
+export const fetchCountry = () => async (dispatch) => {
   const response = await axios.get(url);
   const data = await response.data;
   const countries = [];
   try {
     data.forEach((el) => {
       countries.push({
-        id: el.countryInfo.id,
+        id: el.countryInfo[0],
         country: el.country,
-        flags: el.countryInfo.flag,
+        flag: el.countryInfo.flag,
         cases: el.cases,
         deaths: el.deaths,
         recovered: el.recovered,
