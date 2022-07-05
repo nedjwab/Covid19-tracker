@@ -1,35 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 body {
-margin: 0;
+  margin: 0;
 }
 
 header {
-display:flex;
-flex-direction: row;
-color:white;
-background-color:#4D4C7D;
-align-items: center;
-gap:33.5rem;
-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  display: flex;
+  flex-direction: row;
+  color: white;
+  background-color: #4d4c7d;
+  align-items: center;
+  gap: 33.5rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
 }
 
 .title {
-  font-family:'Lato', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-size: 1.4rem;
-  color:white;
+  color: white;
 }
 
 .icons {
-  margin-top:0.4rem;
-  display:flex;
-  gap:1rem;
-  cursor:pointer;
-  font-size:1.2rem;
+  margin-top: 0.4rem;
+  display: flex;
+  gap: 1rem;
+  cursor: pointer;
+  font-size: 1.2rem;
 }
 
 .arrow-class {
   margin-left: 1.8rem;
   cursor: pointer;
-  font-size:1.2rem;
+  font-size: 1.2rem;
 }
