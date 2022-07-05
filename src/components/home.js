@@ -1,5 +1,6 @@
 import React from 'react';
 import { GiWorld } from 'react-icons/gi';
+import { FiSearch } from 'react-icons/fi';
 
 const Home = () => (
   <section className="body">
@@ -21,6 +22,12 @@ const Home = () => (
       <p>Asia</p>
       <p>Europe</p>
       <p>America</p>
+    </div>
+    <div className="main-container">
+      <span className="search-container">
+        <FiSearch />
+      </span>
+      <input placeholder="eg:Algeria, America" />
     </div>
   </section>
 );
