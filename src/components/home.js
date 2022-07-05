@@ -43,7 +43,11 @@ function Home() {
         <ul className="countries-list">
           {
       countriesData.map((data) => (
-        <Link to={`/details/${data.country}`} key={data.country} state="algeria">
+        <Link
+          to={`/details/${data.country}`}
+          key={data.country}
+          state={data.country === null ? '' : { country: data.country }}
+        >
           <div className="country-info">
             <p className="country-name">{data.country.toUpperCase()}</p>
             <img src={data.flag} alt="flag" />

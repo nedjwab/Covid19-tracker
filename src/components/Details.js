@@ -5,11 +5,11 @@ import { fetchStat } from '../redux/CountriesStat';
 
 function Details() {
   const location = useLocation();
-  const { capital } = location.state;
-  console.log(capital);
+  const { country } = location.state;
+  console.log(country);
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(fetchStat(capital));
+    dispatch(fetchStat(country));
   }, []);
 
   const stat = useSelector((state) => state.countryStat);
