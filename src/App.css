@@ -8,7 +8,7 @@ header {
   display: flex;
   flex-direction: row;
   color: white;
-  background-color: #4d4c7d;
+  background-color: #363062;
   align-items: center;
   gap: 33.5rem;
   box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
@@ -32,4 +32,33 @@ header {
   margin-left: 1.8rem;
   cursor: pointer;
   font-size: 1.2rem;
+  color:white;
+}
+
+.home-banner {
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  gap:6rem;
+  background-color:#E6E6E6;
+  padding-top: 0.1rem;;
+}
+
+.world-map {
+  color:#363062;
+  font-size: 7rem;
+  margin-top: 2rem;
+}
+
+.banner-title {
+  font-size: 2rem;
+  color:#363062;
+  margin-bottom: 0.2rem;
+  font-weight: 600;
+}
+
+.case-title {
+  color: #1C0C5B;
+  font-size:1.4rem;
+  margin-bottom: 2rem;
 }
