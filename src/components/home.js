@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { GiWorld } from 'react-icons/gi';
 import { FiSearch } from 'react-icons/fi';
+import { Link } from 'react-router-dom';
 import { fetchCountry } from '../redux/Countries';
 
 function Home() {
@@ -42,13 +43,15 @@ function Home() {
         <ul className="countries-list">
           {
       countriesData.map((data) => (
-        <div className="country-info" key={data.iso}>
-          <p className="country-name">{data.country.toUpperCase()}</p>
-          <img src={data.flag} alt="flag" />
-          <p className="country-capital">{data.iso}</p>
-          <p className="country-capital">{data.cases}</p>
-          <p className="country-capital">{data.deaths}</p>
-        </div>
+        <Link to={`/details/${data.country}`} key={data.country} state="algeria">
+          <div className="country-info">
+            <p className="country-name">{data.country.toUpperCase()}</p>
+            <img src={data.flag} alt="flag" />
+            <p className="country-capital">{data.iso}</p>
+            <p className="country-capital">{data.cases}</p>
+            <p className="country-capital">{data.deaths}</p>
+          </div>
+        </Link>
       ))
      }
         </ul>
