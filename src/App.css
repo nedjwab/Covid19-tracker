@@ -231,7 +231,6 @@ input {
     cursor: pointer;
     display: flex;
     flex-wrap: wrap;
-    background-color: #232122;
   }
 
   .country-img {
@@ -267,7 +266,7 @@ input {
   .card-country {
     display: flex;
     flex-direction: column;
-    width: 49.5%;
+    width: 50%;
     height: 10rem;
     background-color: #232122;
     padding-top: 0.5rem;
