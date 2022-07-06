@@ -1,20 +1,13 @@
 import '@testing-library/jest-dom/extend-expect';
-import { Provider } from 'react-redux';
-import { BrowserRouter } from 'react-router-dom';
-import ReactDOM from 'react-dom';
-import { screen } from '@testing-library/react';
 import Home from '../components/home';
+import renderer from 'react-test-renderer';
+import { BrowserRouter as Router } from 'react-router-dom';
 import store from '../Redux/configureStore';
+import { Provider } from 'react-redux';
 
-test('Home should render correctly', () => {
-  const body = document.createElement('body');
-  ReactDOM.render(
-    <Provider store={store}>
-      <BrowserRouter>
-        <Home />
-      </BrowserRouter>
-    </Provider>,
-    body,
-  );
-  expect(screen).toMatchSnapshot();
+it('renders correctly', () => {
+  const home = renderer
+    .create(<Provider store={store}><Router><Home /></Router></Provider>)
+    .toJSON();
+  expect(home).toMatchSnapshot();
 });
