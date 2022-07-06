@@ -101,7 +101,7 @@ input {
   background-color: #e6e6e6;
 }
 
-@media (max-width: 481px) and (min-width: 320px) {
+@media (max-width: 481px) {
   html,
   body {
     margin: 0;
@@ -112,7 +112,7 @@ input {
 
   header {
     gap: 3rem;
-    width: 90%;
+    width: 100%;
     justify-content: center;
   }
 
@@ -143,7 +143,7 @@ input {
   .home-banner {
     display: flex;
     flex-direction: row;
-    width: 90%;
+    width:100%;
     gap: 1rem;
     justify-content: center;
     align-items: center;
@@ -202,7 +202,7 @@ input {
     border-radius: 1rem;
     margin-right: 3.9rem;
     height: 2.5rem;
-    width: 50%;
+    width: 100%;
     font-size: 0.9rem;
     text-align: center;
     background-color: white;
@@ -214,7 +214,7 @@ input {
   }
 
   .categories-container {
-    width: 88.9%;
+    width: 100%;
     text-align: center;
     background-color: #660708;
     color: white;
@@ -223,12 +223,13 @@ input {
   }
 
   .countries-list {
-    width: 99%;
+    width: 100%;
     margin: 0;
     padding: 0;
     cursor: pointer;
     display: flex;
     flex-wrap: wrap;
+    background-color: #232122;
   }
 
   .country-img {
@@ -273,7 +274,7 @@ input {
   .container {
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 100%;
   }
 
   .details-flag {
@@ -291,7 +292,7 @@ input {
   }
 
   .detail-container p {
-    width: 86%;
+    width: 88%;
     padding: 1.5rem;
     color: white;
     margin-bottom: 0;
