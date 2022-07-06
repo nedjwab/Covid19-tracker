@@ -117,9 +117,15 @@ input {
   background-color: #e6e6e6;
 }
 
-@media (max-width: 481px) and (max-width: 767px) {
+@media (max-width: 481px) and (min-width: 320px)   {
+  body {
+    margin: 0;
+    overflow-x: auto;
+  }
+
   header {
      gap: 3rem;
+     width: 90%;
      justify-content:center;
   }
   
@@ -206,7 +212,7 @@ input {
     border:1px solid #A4161A;
     border-radius: 1rem;
     margin-right: 3rem;
-    height: 2rem;
+    height: 2.5rem;
     width: 900px;
     font-size:0.9rem;
     text-align: center;
@@ -230,12 +236,11 @@ input {
   }
 
   .countries-list {
-    width: 100%;
+    width: 99%;
     margin: 0;
     padding: 0;
     cursor: pointer;
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
   }
 
@@ -244,7 +249,6 @@ input {
     width:43%;
     margin-left: 1rem;
     bottom: 1.8rem;
-    
   }
 
   .country-info {
@@ -256,7 +260,7 @@ input {
 
   .right-arrow {
     position: relative;
-    left:84%;
+    left:76%;
     font-size: 1.6rem;
   }
 
@@ -266,18 +270,15 @@ input {
 
   .info {
     position: relative;
-    left:73%;
+    left:64%;
   }   
 
   .card-country {
     display: flex;
-    justify-content: space-between;
-    align-content: center;
     flex-direction: column;
     width: 45%;
     height: 10rem;
     background-color: #232122;
-    padding-right: 0.5rem;
     padding-top: 0.5rem;
   }
 
@@ -301,7 +302,7 @@ input {
   }
 
   .detail-container p {
-    width:100%;
+    width:77%;
     padding:1.5rem;
     color:white;
     margin-bottom: 0;
