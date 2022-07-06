@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
-
 body {
   margin: 0;
   font-family: 'Cabin', sans-serif;
@@ -9,10 +8,10 @@ body {
 header {
   display: flex;
   flex-direction: row;
-  color: #F5F3F4;
+  color: #f5f3f4;
   background-color: #660708;
   align-items: center;
-  justify-content:center;
+  justify-content: center;
   gap: 33.5rem;
   box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
 }
@@ -51,7 +50,7 @@ header {
 }
 
 .world-map {
-  color: #161A1D;
+  color: #161a1d;
   font-size: 9rem;
   margin-top: 2rem;
   margin-bottom: 1rem;
@@ -64,17 +63,17 @@ header {
 
 .first-virus {
   position: relative;
-  left:53%;
+  left: 53%;
   margin-top: 1.5rem;
   font-size: 3.5rem;
-  color:#A4161A
+  color: #a4161a;
 }
 
 .second-virus {
   position: relative;
-  left:100%;
+  left: 100%;
   font-size: 3rem;
-  color:#A4161A
+  color: #a4161a;
 }
 
 .banner-title {
@@ -85,7 +84,7 @@ header {
 }
 
 .banner-text {
-  color:#161A1D;
+  color: #161a1d;
 }
 
 .categories-container {
@@ -93,7 +92,7 @@ header {
   flex-direction: row;
   gap: 20rem;
   justify-content: center;
-  background-color: #E5383B;
+  background-color: #e5383b;
   color: white;
   font-size: 1.2rem;
   cursor: pointer;
@@ -118,18 +117,18 @@ input {
   background-color: #e6e6e6;
 }
 
-@media (max-width: 481px) and (min-width: 320px)   {
+@media (max-width: 481px) and (min-width: 320px) {
   body {
     margin: 0;
     overflow-x: auto;
   }
 
   header {
-     gap: 3rem;
-     width: 90%;
-     justify-content:center;
+    gap: 3rem;
+    width: 90%;
+    justify-content: center;
   }
-  
+
   .title {
     font-family: 'Lato', sans-serif;
     font-size: 1rem;
@@ -140,7 +139,7 @@ input {
     margin-top: 0.4rem;
     margin-right: 0.5rem;
     display: flex;
-    gap:0.25rem;
+    gap: 0.25rem;
     cursor: pointer;
     font-size: 1rem;
   }
@@ -149,26 +148,26 @@ input {
     margin-top: 2rem;
     cursor: pointer;
     font-size: 1rem;
-    margin-left: 0rem;
+    margin-left: 0;
     color: white;
     margin-right: 0.7rem;
   }
-  
+
   .home-banner {
     display: flex;
     flex-direction: row;
     gap: 1rem;
     justify-content: center;
     align-items: center;
-    background-color: #F5F3F4;
+    background-color: #f5f3f4;
     padding-top: 0.1rem;
   }
 
   .world-map {
-    color: #F5F3F4;
+    color: #f5f3f4;
     position: relative;
     font-size: 2.4rem;
-    padding-right: 0rem;
+    padding-right: 0;
     margin-bottom: 4rem;
   }
 
@@ -189,9 +188,9 @@ input {
 
   .map-unique {
     position: relative;
-    left:1.8rem;
-    top:0.1rem;
-    color:#A4161A;
+    left: 1.8rem;
+    top: 0.1rem;
+    color: #a4161a;
     font-size: 4.1rem;
   }
 
@@ -200,33 +199,33 @@ input {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    background-color:white;
+    background-color: white;
   }
 
   .search-container {
     margin-left: 1rem;
     font-size: 1.5rem;
-    color: #A4161A;
+    color: #a4161a;
   }
-  
+
   input {
-    border:1px solid #A4161A;
+    border: 1px solid #a4161a;
     border-radius: 1rem;
     margin-right: 3.9rem;
     height: 2.5rem;
     width: 900px;
-    font-size:0.9rem;
+    font-size: 0.9rem;
     text-align: center;
-    background-color:white;
+    background-color: white;
   }
 
   input:focus {
-    outline: none ;
-    border:1px solid #A4161A;
+    outline: none;
+    border: 1px solid #a4161a;
   }
 
   .categories-container {
-    width:88.9%;
+    width: 88.9%;
     text-align: center;
     background-color: #660708;
     color: white;
@@ -245,21 +244,21 @@ input {
 
   .country-img {
     position: relative;
-    width:43%;
+    width: 43%;
     margin-left: 1rem;
     bottom: 1.8rem;
   }
 
   .country-info {
-    color:white;
+    color: white;
     text-decoration: none;
     width: 11rem;
-    padding-top:0.3rem
+    padding-top: 0.3rem;
   }
 
   .right-arrow {
     position: relative;
-    left:76%;
+    left: 76%;
     font-size: 1.6rem;
   }
 
@@ -269,8 +268,8 @@ input {
 
   .info {
     position: relative;
-    left:64%;
-  }   
+    left: 64%;
+  }
 
   .card-country {
     display: flex;
@@ -288,7 +287,7 @@ input {
 
   .details-flag {
     margin-top: 2rem;
-    width:40%;
+    width: 40%;
     margin-left: 5.2rem;
     margin-bottom: 2rem;
   }
@@ -296,26 +295,24 @@ input {
   .detail-container {
     display: flex;
     flex-direction: column;
-    justify-content:flex-start;
+    justify-content: flex-start;
     align-items: flex-start;
   }
 
   .detail-container p {
-    width:77%;
-    padding:1.5rem;
-    color:white;
+    width: 77%;
+    padding: 1.5rem;
+    color: white;
     margin-bottom: 0;
     margin-top: 0;
   }
 
   .detail-container p:nth-child(2n-1) {
-    background: #161A1D;
+    background: #161a1d;
   }
 
   .detail-container p:nth-child(2n) {
-    background: #F5F3F4;
-    color:#161A1D;
+    background: #f5f3f4;
+    color: #161a1d;
   }
-  
-  
 }
