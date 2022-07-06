@@ -6,6 +6,9 @@ import { fetchStat } from '../redux/CountriesStat';
 function Details() {
   const location = useLocation();
   const { country } = location.state;
+  const { flag } = location.state;
+  console.log(country);
+  console.log(flag);
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(fetchStat(country));
@@ -17,6 +20,7 @@ function Details() {
       <h1>{ stat.cases }</h1>
       <h1>{ stat.population }</h1>
       <h1>{ stat.tests }</h1>
+      <img src={flag} alt="flag" />
       <h1>{ stat.continent }</h1>
       <h1>{ stat.oneCasePerPeople }</h1>
       <h1>{ stat.oneDeathPerPeople }</h1>

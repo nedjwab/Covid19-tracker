@@ -45,7 +45,7 @@ function Home() {
             <Link
               to={`/details/${data.country}`}
               key={data.country}
-              state={data.country === null ? '' : { country: data.country }}
+              state={data.country === null ? '' : { country: data.country, flag: data.flag }}
             >
               <div className="country-info">
                 <p className="country-name">{data.country.toUpperCase()}</p>
