@@ -45,7 +45,6 @@ header {
   background-image: url("./assets/map.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-size: 100% 120%;
   padding-top: 0.1rem;
 }
 
@@ -59,21 +58,6 @@ header {
 
 .place {
   font-weight: 700;
-}
-
-.first-virus {
-  position: relative;
-  left: 53%;
-  margin-top: 1.5rem;
-  font-size: 3.5rem;
-  color: #a4161a;
-}
-
-.second-virus {
-  position: relative;
-  left: 100%;
-  font-size: 3rem;
-  color: #a4161a;
 }
 
 .banner-title {
@@ -118,14 +102,6 @@ input {
 }
 
 @media (max-width: 481px) and (min-width: 320px) {
-  body {
-    margin: 0;
-    overflow-x: hidden;
-    width:100%;
-    margin: 0;
-    padding: 0;
-  }
-
   header {
     gap: 3rem;
     width: 90%;
@@ -159,7 +135,7 @@ input {
   .home-banner {
     display: flex;
     flex-direction: row;
-    width:90%;
+    width: 90%;
     gap: 1rem;
     justify-content: center;
     align-items: center;
@@ -200,6 +176,7 @@ input {
 
   .main-container {
     display: flex;
+    padding: 0.3rem;
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -217,7 +194,7 @@ input {
     border-radius: 1rem;
     margin-right: 3.9rem;
     height: 2.5rem;
-    width: 900px;
+    width: 50%;
     font-size: 0.9rem;
     text-align: center;
     background-color: white;
@@ -318,5 +295,13 @@ input {
   .detail-container p:nth-child(2n) {
     background: #f5f3f4;
     color: #161a1d;
+  }
+
+  html,
+  body {
+    margin: 0;
+    overflow-x: hidden;
+    width: 100%;
+    padding: 0;
   }
 }
