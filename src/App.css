@@ -1,39 +1,94 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body {
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  color: white;
+  background-color: #363062;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 33.5rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+}
+
+.title {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.4rem;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.icons {
+  margin-top: 0.4rem;
+  display: flex;
+  gap: 1rem;
+  cursor: pointer;
+  font-size: 1.2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
+.arrow-class {
+  margin-left: 1.8rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: white;
+}
 
-  to {
-    transform: rotate(360deg);
-  }
+.home-banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 6rem;
+  background-color: #e6e6e6;
+  padding-top: 0.1rem;
+}
+
+.world-map {
+  color: #363062;
+  font-size: 7rem;
+  margin-top: 2rem;
+}
+
+.banner-title {
+  font-size: 2rem;
+  color: #363062;
+  margin-bottom: 0.2rem;
+  font-weight: 600;
+}
+
+.case-title {
+  color: #1c0c5b;
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+}
+
+.categories-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20rem;
+  justify-content: center;
+  background-color: #363062;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.main-container {
+  background-color: #e6e6e6;
+  padding: 1rem;
+}
+
+.search-container {
+  margin-left: 1.7rem;
+  font-size: 1.5rem;
+  color: #1c0c5b;
+}
+
+input {
+  border: none;
+  font-size: 1.5rem;
+  color: #1c0c5b;
+  margin: 1rem;
+  background-color: #e6e6e6;
 }
