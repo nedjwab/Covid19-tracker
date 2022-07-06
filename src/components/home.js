@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { GiAfrica } from 'react-icons/gi';
+import { GiAfrica, GiWorld } from 'react-icons/gi';
 import { FiSearch } from 'react-icons/fi';
-import { RiVirusFill } from 'react-icons/ri';
 import { Link } from 'react-router-dom';
 import { fetchCountry } from '../redux/Countries';
 
@@ -19,12 +18,11 @@ function Home() {
   return (
     <section className="body">
       <div className="home-banner">
-        <span className="first-virus"><RiVirusFill /></span>
-        <span className="world-map"><GiAfrica /></span>
+        <span className="world-map"><GiWorld /></span>
         <div className="banner-text">
           <p className="banner-title">Covid statistics</p>
           <p className="place">AFRICA</p>
-          <span className="second-virus"><RiVirusFill /></span>
+          <span className="map-unique"><GiAfrica /></span>
         </div>
       </div>
       <div className="main-container">
