@@ -111,7 +111,7 @@ input {
   }
 
   header {
-    gap: 3rem;
+    gap: 5.1rem;
     width: 100%;
     justify-content: center;
   }
@@ -157,6 +157,8 @@ input {
     font-size: 2.4rem;
     padding-right: 0;
     margin-bottom: 4rem;
+    left: 0.3rem;
+    margin-right: 1rem;
   }
 
   .place {
@@ -167,7 +169,6 @@ input {
     font-size: 1.3rem;
     font-weight: 600;
     color: white;
-    margin-right: 0.7rem;
   }
 
   .banner-text {
@@ -176,8 +177,8 @@ input {
 
   .map-unique {
     position: relative;
-    left: 1.8rem;
-    top: 0.1rem;
+    left: 1rem;
+    bottom: 1.1rem;
     color: #a4161a;
     font-size: 4.1rem;
   }
@@ -195,12 +196,13 @@ input {
     margin-left: 1rem;
     font-size: 1.5rem;
     color: #a4161a;
+    margin-left: 2rem;
   }
 
   input {
     border: 1px solid #a4161a;
     border-radius: 1rem;
-    margin-right: 3.9rem;
+    margin-right: 3rem;
     height: 2.5rem;
     width: 100%;
     font-size: 0.9rem;
@@ -265,7 +267,7 @@ input {
   .card-country {
     display: flex;
     flex-direction: column;
-    width: 45%;
+    width: 49.5%;
     height: 10rem;
     background-color: #232122;
     padding-top: 0.5rem;
@@ -280,7 +282,7 @@ input {
   .details-flag {
     margin-top: 2rem;
     width: 40%;
-    margin-left: 5.2rem;
+    margin-left: 7rem;
     margin-bottom: 2rem;
   }
 
