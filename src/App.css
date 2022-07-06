@@ -87,12 +87,6 @@ header {
   color:#161A1D;
 }
 
-.case-title {
-  color: #1c0c5b;
-  font-size: 1.4rem;
-  margin-bottom: 2rem;
-}
-
 .categories-container {
   display: flex;
   flex-direction: row;
@@ -223,5 +217,17 @@ input {
     outline: none ;
     border:1px solid #A4161A;
   }
+
+  .categories-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20rem;
+    justify-content: center;
+    background-color: #660708;
+    color: white;
+    font-size: 0.9rem;
+    cursor: pointer;
+  }
+   
   
 }
