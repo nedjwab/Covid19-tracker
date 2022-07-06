@@ -12,6 +12,7 @@ function Home() {
   }, []);
 
   const countriesData = useSelector((state) => state.countriesData);
+  const filtredcountriesData = countriesData.filter((dat) => (dat.continent === 'Africa'));
   const [postCity, setCity] = useState('');
   const dataSearch = (str) => setCity(str);
   return (
@@ -44,7 +45,7 @@ function Home() {
       <div className="countries-container">
         <ul className="countries-list">
           {
-      countriesData.filter((value) => value.country
+      filtredcountriesData.filter((value) => value.country
         .toLowerCase().includes(postCity
           .toLocaleLowerCase())).map((data) => (
             <Link
