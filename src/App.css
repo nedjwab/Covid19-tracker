@@ -276,10 +276,46 @@ input {
     flex-direction: column;
     width: 45%;
     height: 10rem;
-    background-color: #B1A7A6;
+    background-color: #232122;
     padding-right: 0.5rem;
     padding-top: 0.5rem;
   }
-  
 
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .details-flag {
+    margin-top: 2rem;
+    width:40%;
+    margin-left: 5.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .detail-container {
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: flex-start;
+  }
+
+  .detail-container p {
+    width:100%;
+    padding:1.5rem;
+    color:white;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  .detail-container p:nth-child(2n-1) {
+    background: #161A1D;
+  }
+
+  .detail-container p:nth-child(2n) {
+    background: #F5F3F4;
+    color:#161A1D;
+  }
+  
+  
 }

@@ -7,8 +7,6 @@ function Details() {
   const location = useLocation();
   const { country } = location.state;
   const { flag } = location.state;
-  console.log(country);
-  console.log(flag);
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(fetchStat(country));
@@ -17,16 +15,45 @@ function Details() {
   const stat = useSelector((state) => state.countryStat);
   return (
     <div className="container">
-      <h1>{ stat.cases }</h1>
-      <h1>{ stat.population }</h1>
-      <h1>{ stat.tests }</h1>
-      <img src={flag} alt="flag" />
-      <h1>{ stat.continent }</h1>
-      <h1>{ stat.oneCasePerPeople }</h1>
-      <h1>{ stat.oneDeathPerPeople }</h1>
-      <h1>{ stat.oneTestPerPeople }</h1>
-      <h1>{ stat.recoveredPerOneMillion }</h1>
-      <h1>Test</h1>
+      <img className="details-flag" src={flag} alt="flag" />
+      <div className="detail-container">
+        <p>
+          Name :
+          { stat.country }
+        </p>
+        <p>
+          Cases :
+          { stat.cases }
+        </p>
+        <p>
+          Population :
+          { stat.population }
+        </p>
+        <p>
+          Tests :
+          { stat.tests }
+        </p>
+        <p>
+          Recovered :
+          { stat.recovered }
+        </p>
+        <p>
+          Critical:
+          { stat.critical }
+        </p>
+        <p>
+          CasePerPeople :
+          { stat.oneCasePerPeople }
+        </p>
+        <p>
+          DeathPerPeople :
+          { stat.oneDeathPerPeople }
+        </p>
+        <p>
+          TestPerPeople
+          { stat.oneTestPerPeople }
+        </p>
+      </div>
     </div>
   );
 }
