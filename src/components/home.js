@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { GiWorld } from 'react-icons/gi';
+import { GiAfrica } from 'react-icons/gi';
 import { FiSearch } from 'react-icons/fi';
+import { RiVirusFill } from 'react-icons/ri';
 import { Link } from 'react-router-dom';
 import { fetchCountry } from '../redux/Countries';
 
@@ -18,29 +19,22 @@ function Home() {
   return (
     <section className="body">
       <div className="home-banner">
-        <span className="world-map"><GiWorld /></span>
+        <span className="first-virus"><RiVirusFill /></span>
+        <span className="world-map"><GiAfrica /></span>
         <div className="banner-text">
-          <p className="banner-title">world statistics</p>
-          <span className="case-title">cases:12243647454 </span>
-          {' '}
-          <br />
-          <span className="case-title">deaths: 12243647454</span>
-          <br />
-          <span className="case-title">recovered:12243647454</span>
-          <br />
+          <p className="banner-title">Covid statistics</p>
+          <p className="place">AFRICA</p>
+          <span className="second-virus"><RiVirusFill /></span>
         </div>
-      </div>
-      <div className="categories-container">
-        <p className="categories">Africa</p>
-        <p>Asia</p>
-        <p>Europe</p>
-        <p>America</p>
       </div>
       <div className="main-container">
         <span className="search-container">
           <FiSearch />
         </span>
-        <input placeholder="eg:Algeria, America" onChange={(e) => dataSearch(e.target.value)} />
+        <input placeholder="Eg: Algeria , America" onChange={(e) => dataSearch(e.target.value)} />
+      </div>
+      <div className="categories-container">
+        <p>STATS BY COUNTRY</p>
       </div>
       <div className="countries-container">
         <ul className="countries-list">
