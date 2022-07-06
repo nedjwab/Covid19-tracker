@@ -120,7 +120,10 @@ input {
 @media (max-width: 481px) and (min-width: 320px) {
   body {
     margin: 0;
-    overflow-x: auto;
+    overflow-x: hidden;
+    width:100%;
+    margin: 0;
+    padding: 0;
   }
 
   header {
