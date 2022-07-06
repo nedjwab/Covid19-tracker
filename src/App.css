@@ -177,7 +177,7 @@ input {
     font-size: 1.3rem;
     font-weight: 600;
     color: white;
-    margin-right: 3rem;
+    margin-right: 0.7rem;
   }
 
   .banner-text {
@@ -186,8 +186,8 @@ input {
 
   .map-unique {
     position: relative;
-    left:2.5rem;
+    left:1.3rem;
     color:#A4161A;
-    font-size: 4rem;
+    font-size: 4.1rem;
   }
 }
