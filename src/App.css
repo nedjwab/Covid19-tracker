@@ -203,7 +203,7 @@ input {
   }
 
   .search-container {
-    margin-left: 1.7rem;
+    margin-left: 1rem;
     font-size: 1.5rem;
     color: #A4161A;
   }
@@ -211,7 +211,7 @@ input {
   input {
     border:1px solid #A4161A;
     border-radius: 1rem;
-    margin-right: 3rem;
+    margin-right: 3.9rem;
     height: 2.5rem;
     width: 900px;
     font-size:0.9rem;
