@@ -44,13 +44,16 @@ function Home() {
             <Link
               to={`/details/${data.country}`}
               key={data.country}
+              className="card-country"
               state={data.country === null ? '' : { country: data.country, flag: data.flag }}
             >
               <div className="country-info">
-                <span className="right-arrow"><BsArrowRightCircle /></span>
-                <p className="country-name">{data.country.toUpperCase()}</p>
+                <div className="right-arrow"><BsArrowRightCircle /></div>
                 <img className="country-img" src={data.flag} alt="flag" />
-                <p className="country-capital">{data.iso}</p>
+                <div className="info">
+                  <p className="country-capital">{data.iso}</p>
+                  <p>{data.cases}</p>
+                </div>
               </div>
             </Link>
       ))

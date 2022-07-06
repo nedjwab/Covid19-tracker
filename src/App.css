@@ -230,20 +230,24 @@ input {
   }
 
   .countries-list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: auto;
-    grid-gap: 0.6rem;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
     justify-content: center;
-    margin-right: 2.4rem;
+    flex-wrap: wrap;
   }
 
   .country-img {
-    width:50%;
+    position: relative;
+    width:43%;
+    margin-left: 1rem;
+    bottom: 1.8rem;
+    
   }
 
   .country-info {
-    background-color: #B1A7A6;
     color:white;
     text-decoration: none;
     width: 11rem;
@@ -253,9 +257,29 @@ input {
   .right-arrow {
     position: relative;
     left:84%;
-    margin-top: 3rem;
     font-size: 1.6rem;
   }
-   
+
+  a {
+    text-decoration: none;
+  }
+
+  .info {
+    position: relative;
+    left:73%;
+  }   
+
+  .card-country {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-direction: column;
+    width: 45%;
+    height: 10rem;
+    background-color: #B1A7A6;
+    padding-right: 0.5rem;
+    padding-top: 0.5rem;
+  }
   
+
 }
