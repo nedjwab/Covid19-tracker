@@ -235,7 +235,7 @@ input {
     grid-auto-rows: auto;
     grid-gap: 0.6rem;
     justify-content: center;
-    margin-right: 2rem;
+    margin-right: 2.4rem;
   }
 
   .country-img {
@@ -243,10 +243,18 @@ input {
   }
 
   .country-info {
-    background-color: #BA181B;
+    background-color: #B1A7A6;
     color:white;
     text-decoration: none;
     width: 11rem;
+    padding-top:0.3rem
+  }
+
+  .right-arrow {
+    position: relative;
+    left:84%;
+    margin-top: 3rem;
+    font-size: 1.6rem;
   }
    
   

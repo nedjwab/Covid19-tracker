@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { GiAfrica, GiWorld } from 'react-icons/gi';
 import { FiSearch } from 'react-icons/fi';
+import { BsArrowRightCircle } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
 import { fetchCountry } from '../redux/Countries';
 
@@ -46,11 +47,10 @@ function Home() {
               state={data.country === null ? '' : { country: data.country, flag: data.flag }}
             >
               <div className="country-info">
+                <span className="right-arrow"><BsArrowRightCircle /></span>
                 <p className="country-name">{data.country.toUpperCase()}</p>
                 <img className="country-img" src={data.flag} alt="flag" />
                 <p className="country-capital">{data.iso}</p>
-                <p className="country-capital">{data.cases}</p>
-                <p className="country-capital">{data.deaths}</p>
               </div>
             </Link>
       ))
