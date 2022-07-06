@@ -225,10 +225,8 @@ input {
   }
 
   .categories-container {
-    display: flex;
-    flex-direction: row;
-    gap: 20rem;
-    justify-content: center;
+    width:88.9%;
+    text-align: center;
     background-color: #660708;
     color: white;
     font-size: 0.9rem;
