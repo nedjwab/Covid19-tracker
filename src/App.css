@@ -156,6 +156,7 @@ input {
   .home-banner {
     display: flex;
     flex-direction: row;
+    width:90%;
     gap: 1rem;
     justify-content: center;
     align-items: center;
