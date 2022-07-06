@@ -3,6 +3,7 @@
 
 body {
   margin: 0;
+  font-family: 'Cabin', sans-serif;
 }
 
 header {
@@ -268,7 +269,7 @@ input {
 
   .info {
     position: relative;
-    left:64%;
+    left:63%;
   }   
 
   .card-country {
