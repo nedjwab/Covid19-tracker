@@ -47,7 +47,7 @@ function Home() {
             >
               <div className="country-info">
                 <p className="country-name">{data.country.toUpperCase()}</p>
-                <img src={data.flag} alt="flag" />
+                <img className="country-img" src={data.flag} alt="flag" />
                 <p className="country-capital">{data.iso}</p>
                 <p className="country-capital">{data.cases}</p>
                 <p className="country-capital">{data.deaths}</p>

@@ -228,6 +228,26 @@ input {
     font-size: 0.9rem;
     cursor: pointer;
   }
+
+  .countries-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 0.6rem;
+    justify-content: center;
+    margin-right: 2rem;
+  }
+
+  .country-img {
+    width:50%;
+  }
+
+  .country-info {
+    background-color: #BA181B;
+    color:white;
+    text-decoration: none;
+    width: 11rem;
+  }
    
   
 }
