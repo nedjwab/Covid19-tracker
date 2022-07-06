@@ -1,4 +1,4 @@
-import { fetchStat, getCountries } from '../Redux/CountriesStat';
+import { fetchStat, getCountries } from '../redux/countriesStat';
 
 const action = (payload) => ({
   type: ' GET_STAT',

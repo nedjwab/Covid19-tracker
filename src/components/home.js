@@ -4,7 +4,7 @@ import { GiAfrica, GiWorld } from 'react-icons/gi';
 import { FiSearch } from 'react-icons/fi';
 import { BsArrowRightCircle } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
-import { fetchCountry } from '../redux/Countries';
+import { fetchCountry } from '../redux/countries';
 
 function Home() {
   const dispatch = useDispatch();

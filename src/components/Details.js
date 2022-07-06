@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useLocation } from 'react-router';
-import { fetchStat } from '../redux/CountriesStat';
+import { fetchStat } from '../redux/countriesStat';
 
 function Details() {
   const location = useLocation();
