@@ -67,7 +67,7 @@ Contributions, issues, and feature requests are welcome!
 
 Give a ⭐️ if you like this project!
 
-## 📝 License
+## acknowledgement
 -[Nelson Sakwa](https://www.behance.net/sakwadesignstudio)
 
 ## 📝 License
