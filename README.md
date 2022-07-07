@@ -3,6 +3,9 @@
 # Covid-19 Tracker 
 Covid-19 Tracker is a mobile web application showcasing the covid-19 statistics in Africa. when the user clicks on the countries' cards, they will be rendered to the details page that contains more information about the covid-19 in the selected country. Also, the user can search for a specific country using the search bar.
 
+![alt text](https://github.com/nedjwab/Covid19-tracker/blob/deploy/src/assets/github%20screen1.PNG)
+![alt text](https://github.com/nedjwab/Covid19-tracker/blob/deploy/src/assets/githubscreen2.PNG)
+
 # Live Demo
 [Live Demo](https://covid-19-trackern.netlify.app/)
 
