@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
+html,
 body {
   margin: 0;
-  font-family: 'Cabin', sans-serif;
+  overflow-x: hidden;
+  width: 100%;
+  padding: 0;
 }
 
 header {
+  width: 100%;
+  justify-content: center;
   display: flex;
   flex-direction: row;
   color: #f5f3f4;
@@ -18,30 +23,36 @@ header {
 
 .title {
   font-family: 'Lato', sans-serif;
-  font-size: 1.4rem;
+  font-size: 1rem;
   color: white;
 }
 
 .icons {
   margin-top: 0.4rem;
+  margin-right: 0.5rem;
   display: flex;
-  gap: 1rem;
+  gap: 0.25rem;
   cursor: pointer;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .arrow-class {
-  margin-left: 1.8rem;
+  margin-top: 2rem;
   cursor: pointer;
-  font-size: 1.2rem;
+  font-size: 1rem;
+  margin-left: 0;
   color: white;
+  margin-right: 0.7rem;
 }
 
 .home-banner {
   display: flex;
   flex-direction: row;
+  width: 100%;
+  gap: 1rem;
   justify-content: center;
-  gap: 4rem;
+  align-items: center;
+  background-color: #f5f3f4;
   background-image: url("./assets/map.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -49,11 +60,13 @@ header {
 }
 
 .world-map {
-  color: #161a1d;
-  font-size: 9rem;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-  padding-right: 4rem;
+  color: #f5f3f4;
+  position: relative;
+  font-size: 2.4rem;
+  padding-right: 0;
+  margin-bottom: 4rem;
+  left: 0.3rem;
+  margin-right: 1rem;
 }
 
 .place {
@@ -61,66 +74,163 @@ header {
 }
 
 .banner-title {
-  font-size: 2rem;
-  margin-bottom: 0.2rem;
-  margin-top: 4rem;
+  font-size: 1.3rem;
   font-weight: 600;
+  color: #f5f3f4;
 }
 
 .banner-text {
-  color: #161a1d;
+  color: white;
 }
 
-.categories-container {
-  display: flex;
-  flex-direction: row;
-  gap: 20rem;
-  justify-content: center;
-  background-color: #e5383b;
-  color: white;
-  font-size: 1.2rem;
-  cursor: pointer;
+.map-unique {
+  position: relative;
+  left: 1rem;
+  bottom: 1.1rem;
+  color: #a4161a;
+  font-size: 4.1rem;
 }
 
 .main-container {
-  background-color: #e6e6e6;
-  padding: 1rem;
+  display: flex;
+  padding: 0.3rem;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
 }
 
 .search-container {
-  margin-left: 1.7rem;
   font-size: 1.5rem;
-  color: #1c0c5b;
+  color: #a4161a;
+  margin-left: 2rem;
 }
 
 input {
-  border: none;
-  font-size: 1.5rem;
-  color: #1c0c5b;
-  margin: 1rem;
-  background-color: #e6e6e6;
+  border: 1px solid #a4161a;
+  border-radius: 1rem;
+  margin-right: 3rem;
+  height: 2.5rem;
+  width: 100%;
+  font-size: 0.9rem;
+  text-align: center;
+  background-color: white;
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid #a4161a;
+}
+
+.categories-container {
+  width: 100%;
+  text-align: center;
+  background-color: #660708;
+  color: white;
+  font-size: 0.9rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  margin-top: 1rem;
+}
+
+.countries-list {
+  width: 100%;
+  margin: 0;
+  cursor: pointer;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 13rem;
+  background-color: #660708;
+}
+
+.country-img {
+  position: relative;
+  width: 43%;
+  margin-left: 1rem;
+  bottom: 1.8rem;
+}
+
+.country-info {
+  color: white;
+  text-decoration: none;
+  width: 11rem;
+  padding-top: 0.3rem;
+}
+
+.right-arrow {
+  position: relative;
+  left: 86%;
+  font-size: 1.6rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.info {
+  position: relative;
+  left: 50%;
+  width: 30%;
+  bottom: 0.7rem;
+}
+
+.country-capital {
+  width: 180%;
+}
+
+.card-country {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 10rem;
+  background-color: #660708;
+  padding-top: 0.5rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.details-flag {
+  margin-top: 2rem;
+  width: 20%;
+  margin-left: 30rem;
+  margin-bottom: 2rem;
+}
+
+.detail-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.detail-container p {
+  width: 100%;
+  padding: 1.5rem;
+  color: white;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.detail-container p:nth-child(2n-1) {
+  background: #660708;
+}
+
+.detail-container p:nth-child(2n) {
+  background: #f5f3f4;
+  color: #660708;
 }
 
 @media (max-width: 481px) {
-  html,
-  body {
-    margin: 0;
-    overflow-x: hidden;
-    width: 100%;
-    padding: 0;
-  }
-
   header {
     gap: 5.1rem;
     width: 100%;
     justify-content: center;
   }
 
-  .title {
-    font-family: 'Lato', sans-serif;
-    font-size: 1rem;
-    color: white;
-  }
 
   .icons {
     margin-top: 0.4rem;
@@ -161,24 +271,11 @@ input {
     margin-right: 1rem;
   }
 
-  .place {
-    font-weight: 700;
-  }
-
-  .banner-title {
-    font-size: 1.3rem;
-    font-weight: 600;
-    color: white;
-  }
-
-  .banner-text {
-    color: white;
-  }
-
   .map-unique {
     position: relative;
-    left: 1rem;
-    bottom: 1.1rem;
+    left: 0.4rem;
+    top: 0.95rem;
+    bottom: 0;
     color: #a4161a;
     font-size: 4.1rem;
   }
@@ -192,26 +289,14 @@ input {
     background-color: white;
   }
 
-  .search-container {
-    font-size: 1.5rem;
-    color: #a4161a;
-    margin-left: 2rem;
-  }
-
-  input {
-    border: 1px solid #a4161a;
-    border-radius: 1rem;
-    margin-right: 3rem;
-    height: 2.5rem;
+  .countries-list {
     width: 100%;
-    font-size: 0.9rem;
-    text-align: center;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
     background-color: white;
-  }
-
-  input:focus {
-    outline: none;
-    border: 1px solid #a4161a;
   }
 
   .categories-container {
@@ -221,65 +306,8 @@ input {
     color: white;
     font-size: 0.9rem;
     cursor: pointer;
-  }
-
-  .countries-list {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    cursor: pointer;
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .country-img {
-    position: relative;
-    width: 43%;
-    margin-left: 1rem;
-    bottom: 1.8rem;
-  }
-
-  .country-info {
-    color: white;
-    text-decoration: none;
-    width: 11rem;
-    padding-top: 0.3rem;
-  }
-
-  .right-arrow {
-    position: relative;
-    left: 86%;
-    font-size: 1.6rem;
-  }
-
-  a {
-    text-decoration: none;
-  }
-
-  .info {
-    position: relative;
-    left: 50%;
-    width: 30%;
-    bottom: 0.7rem;
-  }
-
-  .country-capital {
-    width: 180%;
-  }
-
-  .card-country {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    height: 10rem;
-    background-color: #232122;
-    padding-top: 0.5rem;
-  }
-
-  .container {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+    padding: 0.2rem;
+    margin-top: 1rem;
   }
 
   .details-flag {
@@ -287,29 +315,5 @@ input {
     width: 40%;
     margin-left: 7rem;
     margin-bottom: 2rem;
-  }
-
-  .detail-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
-
-  .detail-container p {
-    width: 88%;
-    padding: 1.5rem;
-    color: white;
-    margin-bottom: 0;
-    margin-top: 0;
-  }
-
-  .detail-container p:nth-child(2n-1) {
-    background: #161a1d;
-  }
-
-  .detail-container p:nth-child(2n) {
-    background: #f5f3f4;
-    color: #161a1d;
   }
 }
