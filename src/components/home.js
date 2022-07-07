@@ -51,7 +51,7 @@ function Home() {
                 <div className="right-arrow"><BsArrowRightCircle /></div>
                 <img className="country-img" src={data.flag} alt="flag" />
                 <div className="info">
-                  <p className="country-capital">{data.iso}</p>
+                  <p className="country-capital">{data.country}</p>
                   <p>{data.cases}</p>
                 </div>
               </div>

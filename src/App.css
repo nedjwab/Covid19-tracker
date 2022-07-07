@@ -143,7 +143,7 @@ input {
   .home-banner {
     display: flex;
     flex-direction: row;
-    width:100%;
+    width: 100%;
     gap: 1rem;
     justify-content: center;
     align-items: center;
@@ -193,7 +193,6 @@ input {
   }
 
   .search-container {
-    margin-left: 1rem;
     font-size: 1.5rem;
     color: #a4161a;
     margin-left: 2rem;
@@ -259,8 +258,13 @@ input {
 
   .info {
     position: relative;
-    left: 72%;
+    left: 50%;
     width: 30%;
+    bottom: 0.7rem;
+  }
+
+  .country-capital {
+    width: 180%;
   }
 
   .card-country {
