@@ -50,7 +50,7 @@ function Details() {
           { stat.oneDeathPerPeople }
         </p>
         <p>
-          TestPerPeople
+          TestPerPeople :
           { stat.oneTestPerPeople }
         </p>
       </div>
