@@ -182,7 +182,7 @@ a {
   flex-direction: column;
   width: 50%;
   height: 10rem;
-  background-color: #660708;
+  background-color: #232122;
   padding-top: 0.5rem;
 }
 
@@ -211,8 +211,16 @@ a {
   padding: 1.5rem;
   margin-bottom: 0;
   margin-top: 0;
-  background: #660708;
-  color: white;
+  color:white;
+}
+
+.detail-container p:nth-child(2n-1) {
+  background: #161a1d;
+}
+
+.detail-container p:nth-child(2n) {
+  background: #f5f3f4;
+  color: #161a1d;
 }
 
 @media (max-width: 481px) {
